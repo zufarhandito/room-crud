@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="90dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        app:cardCornerRadius="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout2">
+
+      <ImageView
+          android:id="@+id/imgPhoto"
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          tools:layout_editor_absoluteX="7dp"
+          tools:layout_editor_absoluteY="6dp" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="295dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cardView2"
+        tools:layout_editor_absoluteY="1dp">
+
+      <Button
+          android:id="@+id/btnDel"
+          android:layout_width="60dp"
+          android:layout_height="30dp"
+          android:layout_alignParentEnd="true"
+          android:inputType="text"
+          android:padding="3dp"
+          android:text="Delete"
+          android:textSize="10dp"
+          app:icon="@android:drawable/ic_menu_delete"
+          app:iconPadding="0dp"
+          app:iconSize="15dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.978"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/btnEdit"
+          app:layout_constraintVertical_bias="0.285" />
+
+      <Button
+          android:id="@+id/btnEdit"
+          android:layout_width="60dp"
+          android:layout_height="30dp"
+          android:layout_marginHorizontal="4dp"
+          android:layout_toLeftOf="@+id/btnDel"
+          android:inputType="text"
+          android:padding="3dp"
+          android:text="Edit"
+          android:textSize="10dp"
+          app:icon="@android:drawable/ic_menu_edit"
+          app:iconPadding="0dp"
+          app:iconSize="15dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.99"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.266" />
+
+      <TextView
+          android:id="@+id/txtNama"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="sans-serif-medium"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.028"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.06"
+          tools:text="Item name" />
+
+      <TextView
+          android:id="@+id/txtHp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/txtAlamat"
+          android:layout_toRightOf="@+id/imgPhoto"
+          android:text="stok"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.022"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.859" />
+
+      <TextView
+          android:id="@+id/txtAlamat"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.026"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintVertical_bias="0.436"
+          tools:text="Short Description" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
